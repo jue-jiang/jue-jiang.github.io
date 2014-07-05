@@ -1,0 +1,10 @@
+# Site settings
+title: jhonsonjiang
+email: aa@bb.cc
+description: 记录学习过程中的点点滴滴，方便自己以后查找；如果能够为其它人提供帮助，那也是极好的。
+baseurl: ""
+url: "http://www.jhonsonjiang.com"
+
+# Build settings
+markdown: kramdown
+permalink: pretty
