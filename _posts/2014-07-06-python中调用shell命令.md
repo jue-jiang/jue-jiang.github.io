@@ -13,9 +13,7 @@ os.system是不能将返回结果保存到变量中的，适合修改类型的�
 
 ```python
 import os
-
 a=os.system("mkdir test")
-
 a的值为0，表示命令成功执行
 ```
 
@@ -24,21 +22,13 @@ a的值为0，表示命令成功执行
 stackoverflow中的回答已经给出了使用subprocess获得命令执行状态和执行结果的方式[4]，具体是
 
 ```python
-
 import subprocess
-
 process=subprocess.Popen("ls -al",stdout=subprocess.PIPE,shell=True)
-
 或者 process=subprocess.Popen(["ls","-al"],stdout=subprocess.PIPE)
-
 result=process.communicate()
-
 process.returncode
-
 0
-
 result[0]
-
 result 长度为2，第一个是stdout,第二个是stderr
 ```
 
