@@ -24,6 +24,7 @@ a的值为0，表示命令成功执行
 stackoverflow中的回答已经给出了使用subprocess获得命令执行状态和执行结果的方式[4]，具体是
 
 ```python
+
 import subprocess
 
 process=subprocess.Popen("ls -al",stdout=subprocess.PIPE,shell=True)
