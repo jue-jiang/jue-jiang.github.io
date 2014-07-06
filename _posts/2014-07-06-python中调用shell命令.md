@@ -11,7 +11,7 @@ python支持直接调用shell命令的方式，这个程序的编写带来很大
 ##方法一：os.system
 os.system是不能将返回结果保存到变量中的，适合修改类型的命令
 
-```python
+```python	
 import os
 a=os.system("mkdir test")
 a的值为0，表示命令成功执行
