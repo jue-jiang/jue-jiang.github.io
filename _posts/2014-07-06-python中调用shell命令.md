@@ -11,7 +11,8 @@ python支持直接调用shell命令的方式，这个程序的编写带来很大
 ##方法一：os.system
 os.system是不能将返回结果保存到变量中的，适合修改类型的命令
 
-```
+```python
+
 import os
 
 a=os.system("mkdir test")
@@ -23,7 +24,7 @@ a的值为0，表示命令成功执行
 通过subprocess可以在当前进程中新建进程，并在新的进程中执行命令。采用subprocess.Popen方法可以获得命令执行状态和执行结果。os.popen在2.6之前[2]也可以用来实现相同的功能，但是在2.6之后已经deprecated了[1]。
 stackoverflow中的回答已经给出了使用subprocess获得命令执行状态和执行结果的方式[4]，具体是
 
-```
+```python
 import subprocess
 
 process=subprocess.Popen("ls -al",stdout=subprocess.PIPE,shell=True)
