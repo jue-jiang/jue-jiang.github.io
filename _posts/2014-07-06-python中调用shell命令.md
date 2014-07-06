@@ -1,5 +1,9 @@
 ---
-published: false
+published: true
+layout: post
+title:  python中调用shell命令
+date:   2014-07-06 20:24
+categories: jekyll update
 ---
 
 python支持直接调用shell命令的方式，这个程序的编写带来很大方便,比如可以直接通过调用R脚本来进行绘图。对于shell中的执行的命令，通常有两个值，一个是命令的执行状态，另一个是命令的执行结果。这里总结了python调用shell以及如何获得命令执行状态和执行结果的方式
