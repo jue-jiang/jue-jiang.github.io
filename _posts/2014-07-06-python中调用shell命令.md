@@ -10,8 +10,14 @@ python支持直接调用shell命令的方式，这个程序的编写带来很大
 
 ##方法一：os.system
 os.system是不能将返回结果保存到变量中的，适合修改类型的命令
+
+
 import os
+
+
 a=os.system("mkdir test")
+
+
 a的值为0，表示命令成功执行
 
 ##方法二：subprocess
@@ -27,8 +33,11 @@ stackoverflow中的回答已经给出了使用subprocess获得命令执行状态
 result 长度为2，第一个是stdout,第二个是stderr
 
 [1][python subprocess.Popen vs os.popen - Stack Overflow](http://stackoverflow.com/questions/17916876/python-subprocess-popen-vs-os-popen)
+
 [2][Python执行系统命令的方法 os.system()，os.popen()，commands - renwofei423的个人空间 - 开源中国社区](http://my.oschina.net/renwofei423/blog/17403)
+
 [3][Python标准库06 子进程 (subprocess包) - Vamei - 博客园](http://www.cnblogs.com/vamei/archive/2012/09/23/2698014.html)
+
 [4][How to get exit code when using Python subprocess communicate method? - Stack Overflow](http://stackoverflow.com/questions/5631624/how-to-get-exit-code-when-using-python-subprocess-communicate-method)
 
 
