@@ -1,10 +1,8 @@
 ---
-published: false
+published: true
+time:2014-10-07
 ---
 
----
-published: false
----
 
    在使用mininet仿真的时候，遇到了需要多次修改系统参数，之后再运行iperf测量带宽。如果多次直接使用server.sendCmd('iperf -s')命令的话，会遇到类似assert waiting的错误，因此需要在完成一次带宽测试之后关闭iperf server的进程。
    
