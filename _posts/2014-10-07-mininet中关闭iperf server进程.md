@@ -1,6 +1,8 @@
 ---
 published: true
-time:2014-10-07
+layout: post
+date: 2014-7-27 16:57
+categories: jekyll update
 ---
 
 
